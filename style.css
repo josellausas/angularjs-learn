@@ -1,0 +1,11 @@
+html {
+  font-family: 'Operator Mono';
+}
+
+h1, h2, h3 {
+  font-style: italic;
+}
+
+b {
+  font-weight: 300;
+}
