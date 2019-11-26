@@ -1,5 +1,6 @@
 var myApp = angular.module('myApp', []);
 
+
 myApp.directive('onEnterKeyPressed', function() {
   return function ($scope, element, attrs) {
     element.bind("keydown press", function(event) {
@@ -17,8 +18,12 @@ myApp.directive('onEnterKeyPressed', function() {
 
 myApp.controller('mainController', function($scope) {
   $scope.name = 'Carnalito Angular';
+  $scope.title = 'Angular 1.3.12';
+  $scope.filename = 'hello.js';
   $scope.updateValue = function() {
-    alert('Updated!');
     $scope.name = 'Another one bites the dust';
   };
+  $scope.submit = function() {
+    alert(`${$scope.filename}`);
+  }
 });
